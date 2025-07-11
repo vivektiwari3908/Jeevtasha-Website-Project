@@ -15,6 +15,7 @@ nav{
     padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
+    color: #807878;
    
 }
 nav img{
@@ -266,6 +267,56 @@ nav img{
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* About Us section */
+#about {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+#about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #004d40;
+}
+
+/* Inner content */
+#about .rahul {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#about .rahul p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  #about h1 {
+    font-size: 28px;
+  }
+
+  #about .rahul p {
+    font-size: 16px;
+  }
 }
 
 
