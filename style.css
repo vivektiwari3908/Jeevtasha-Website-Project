@@ -1,3 +1,5 @@
+
+
 .first {
     min-height: 120vh;
     width: 100%;
@@ -6,11 +8,11 @@
     background-size: cover;
     position: relative;
 }
-nav{
-    /* display: flex;
+nav{ 
+     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
     display: flex;
     padding: 1% 6%;
     justify-content: space-between;
@@ -270,7 +272,7 @@ nav img{
 }
 
 
-/* General styles */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -308,15 +310,229 @@ body {
   color: #555;
 }
 
-/* Responsive behavior */
-@media (max-width: 600px) {
-  #about h1 {
-    font-size: 28px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* HEADER */
+header {
+  background: #fff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header img {
+  width: 150px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+  background: #f9f9f9;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #1d3557;
+}
+
+.hero-text span {
+  color: #e63946;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.hero img {
+  max-width: 45%;
+  border-radius: 15px;
+}
+
+/* SECTION BASE STYLE */
+.section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1d3557;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* PROGRAMS & TEAM CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* VOLUNTEER SECTION */
+#volunteer img {
+  width: 450px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#volunteer a {
+  background: #e63946;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+#volunteer a:hover {
+  background: #b72d35;
+}
+
+/* CONTACT SECTION */
+.contact {
+  background: linear-gradient(135deg, #e63946, #f77f00);
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+form button {
+  background: #1d3557;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #457b9d;
+}
+
+/* FOOTER */
+footer {
+  background: #1d3557;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
-  #about .rahul p {
-    font-size: 16px;
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero img {
+    max-width: 80%;
+    margin-bottom: 20px;
   }
 }
+
 
 
