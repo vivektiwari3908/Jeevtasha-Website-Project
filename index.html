@@ -1,160 +1,1322 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeevtasha Foundation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
- 
 
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Jeevtasha Foundation  </title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+  <!-- SWIPER -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css"/>
 
 </head>
+
 <body>
+  
+<!-- =========================
+     NAVBAR
+========================= -->
 
-  <header>
-    <h1><img src="jeevtasha image.jpg" alt="" srcset=""></h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#programs">Programs</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="header">
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h2>We Work For <span>Humanity</span></h2>
-      <p>Jeevtasha Foundation is a non-profit dedicated to uplifting underprivileged communities through education, healthcare, and sustainable development initiatives.</p>
+    <div class="container nav-container">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+          JEEVTASHA  <br>FOUNDATION
+
+        </div>
+
+        <!-- DESKTOP NAV -->
+
+        <ul class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+             <li><a href="#campaigns">Campaigns</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+
+        </ul>
+
+        <!-- DONATE BUTTON -->
+
+      <button class="donate-btn" onclick="openQR()">
+          Donate Now
+      </button>
+
+        <!-- HAMBURGER -->
+
+        <div class="menu-toggle">
+
+            <span>
+ 
+  <img src="assests/images/image.jpeg" alt="Jeevtasha" style="width:100px; height:64px; vertical-align:middle;">
+</span>
+
+        </div>
     </div>
-   <img src="img 6.jpeg" alt="" srcset="">
-  </section>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <p>Founded by passionate changemakers, Jeevtasha Foundation envisions a compassionate society where every individual lives with dignity and opportunity. Our mission is to empower communities through impactful initiatives in education, environment, food security, and healthcare.</p>
-  </section>
+</header>
 
-  <!-- Programs -->
-  <section class="section" id="programs">
-    <h2>Our Programs</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Cloth Donation Drive</h3>
-        <p><img src="img 7.jpeg" alt="" srcset=""
-            width="240px"></p>
-        <p>Providing clothes to underprivileged communities for dignity and comfort.</p>
-      </div>
-      <div class="card">
-        <h3>Plantation Drive</h3>
-        <p><img src="img 3.jpeg" alt="" srcset=""
-            width="240px"></p>
-        <p>Promoting environmental sustainability through tree plantation initiatives.</p>
-      </div>
-      <div class="card">
-        <h3>Education Drive</h3>
-        <p><img src="img 1.jpeg" alt="" srcset=""
-            width="240px"></p>
-        <p>Distributing books, stationery, and providing education support to children.</p>
-      </div>
-      <div class="card">
-        <h3>Food Donation Drive</h3>
-        <p><img src="img 4.jpeg" alt="" srcset=""
-            width="240px"></p>
-        <p>Serving nutritious meals to fight hunger and ensure food security.</p>
-      </div>
-    </div>
-  </section>
+<!-- =========================
+     MOBILE MENU
+========================= -->
 
-  <!-- Team -->
-  <section class="section" id="team">
-    <h2>Our Management</h2>
-    <div class="cards">
-      <div class="card">
-        <p><img src="WhatsApp Image 2025-06-24 at 13.47.15.jpeg" alt="" srcset=""
-            width="240px"></p>
-        <h3>Kartik Jain</h3>
-        <p>Secretary</p>
-      </div>
-      <div class="card">
-        <p><img src="Mikhil bhayia.JPG" alt="" srcset=""
-            width="200px"></p>
-        <h3>Mikhil Agrawal</h3>
+<div class="mobile-menu">
+
+    <button class="close-sidebar">
+
+        ✕
+
+    </button>
+
+    <a href="#home">home</a>
+     <a href="#campaigns">Campaigns</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#contact">Contact</a>
+
+</div>
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-container">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="hero-content" data-aos="fade-right">
+      <span class="hero-tag">
+        🌍 Together We Can Change Lives
+      </span>
+
+      <h1>
+        Building Hope <br>
+        Through Humanity
+      </h1>
+
+      <p>
+        Jeevtasha Foundation is dedicated to empowering communities through education, food donation, healthcare support, and environmental initiatives across India.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="javascript:void(0)" class="primary-btn magnetic" onclick="openQR()">
+    Donate Now
+</a>
+          
+       
+
+        <a  href="https://docs.google.com/forms/d/e/1FAIpQLSe24gA--PMhATjbY0j-sg32M141fybctpEBiQcyKbcIJeIfbA/viewform"
+           target="_blank"
+         
+           style="display:block;text-align:center;text-decoration:none;"  class="primary-btn magnetic">
+
+           become a volunteer
         
-        <p>Chief operating officer</p>
+
+        </a>
+
       </div>
-      <div class="card">
-        <p><img src="Vivek.jpeg" alt="" srcset=""
-            width="240px"></p>
-        <h3>Vivek Tiwari</h3>
-        <p>Chief Technical Officer</p>
+
+      <!-- HERO STATS -->
+
+      <div class="hero-stats">
+
+        <div class="stat-box">
+
+          <h3>5000+</h3>
+
+          <span>Meals Served</span>
+
+        </div>
+
+        <div class="stat-box">
+
+          <h3>1200+</h3>
+
+          <span>Children Helped</span>
+
+        </div>
+
+        <div class="stat-box">
+          <h3>300+</h3>
+          <span>Volunteers</span>
+        </div>
+
       </div>
+
     </div>
-  </section>
+
+    <!-- RIGHT IMAGES -->
+
+    <div class="hero-images" data-aos="fade-left">
+
+      <div class="main-image">
+
+        <img src="assests/images/image.jpeg" alt="">
+
+      </div>
+
+      <div class="floating-card card1">
+
+        <img src="assests/images/image.jpeg" alt="">
+
+      </div>
+
+      <div class="floating-card card2">
+
+        <img src="assests/images/image.jpeg" alt="">
+
+      </div>
+
+      <!-- DONATION BADGE -->
+
+      <div class="donation-badge">
+
+        ❤️ 100% Donation Transparency
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     IMPACT SECTION
+========================= -->
+
+<section class="impact-section" id="campaigns">
+
+  <div class="container">
+
+    <!-- SECTION TITLE -->
+
+    <div class="section-title" data-aos="fade-up">
+
+      <span>
+        OUR IMPACT
+      </span>
+
+      <h2>
+        Together We Are Creating <br>
+        Meaningful Change
+      </h2>
+
+    </div>
+
+    <!-- IMPACT STATS -->
+
+    <div class="impact-grid">
+
+      <div class="impact-card" data-aos="fade-up">
+
+        <h3 class="counter" data-target="5000">0</h3>
+
+        <p>Meals Distributed</p>
+
+      </div>
+
+      <div class="impact-card" data-aos="fade-up" data-aos-delay="100">
+
+        <h3 class="counter" data-target="1200">0</h3>
+
+        <p>Children Supported</p>
+
+      </div>
+
+      <div class="impact-card" data-aos="fade-up" data-aos-delay="200">
+
+        <h3 class="counter" data-target="300">0</h3>
+
+        <p>Volunteers Joined</p>
+
+      </div>
+
+      <div class="impact-card" data-aos="fade-up" data-aos-delay="300">
+
+        <h3 class="counter" data-target="50">0</h3>
+
+        <p>Plantation Drives</p>
+
+      </div>
+
+    </div>
+
+    <!-- CAMPAIGNS -->
+
+    <div class="campaigns">
+
+      <!-- CARD 1 -->
+
+      <div class="campaign-card" data-aos="zoom-in">
+
+        <div class="campaign-image">
+
+          <img src="assests/images/edctn3.jpg" alt="">
+
+        </div>
+
+        <div class="campaign-content">
+
+          <span>Education Drive</span>
+
+          <h3>
+            Help Children Access Better Education
+          </h3>
+
+          <p>
+            Support underprivileged students with books, stationery, uniforms, and educational opportunities.
+          </p>
+
+          <!-- PROGRESS -->
+
+          <div class="progress-area">
+
+            <div class="progress-bar">
+
+              <div class="progress-fill fill1"></div>
+
+</div>
+
+          </div>
+
+         <a href="javascript:void(0)" class="campaign-btn magnetic" onclick="openQR()">
+    Donate Now
+</a>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="campaign-card" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="campaign-image">
+
+          <img src="assests/images/together.jpg" alt="">
+
+        </div>
+
+        <div class="campaign-content">
+
+          <span>Food Donation</span>
+
+          <h3>
+            Nourishing Families In Need
+          </h3>
+
+          <p>
+            Help provide nutritious meals and food kits to struggling families and homeless communities.
+          </p>
+
+          <div class="progress-area">
+
+            <div class="progress-bar">
+
+              <div class="progress-fill fill2"></div>
+
+            </div>
+
+            <div class="progress-info">
+
+              <small>Raised: ₹72,000</small>
+
+              <small>Goal: ₹1,50,000</small>
+
+            </div>
+
+          </div>
+
+          <a href="#" class="campaign-btn magnetic">
+            Donate Now
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="campaign-card" data-aos="zoom-in" data-aos-delay="200">
+
+        <div class="campaign-image">
+
+          <img src="assests/images/plantatoinarihant.jpg" alt="">
+
+        </div>
+
+        <div class="campaign-content">
+
+          <span>Plantation Drive</span>
+
+          <h3>
+            Building A Greener Future
+          </h3>
+
+          <p>
+            Join our mission to plant trees, spread awareness, and create a healthier environment.
+          </p>
+
+          <div class="progress-area">
+
+            <div class="progress-bar">
+
+              <div class="progress-fill fill3"></div>
+
+            </div>
+
+            <div class="progress-info">
+
+              <small>Raised: ₹30,000</small>
+
+              <small>Goal: ₹70,000</small>
+
+            </div>
+
+          </div>
+
+          <a href="#" class="campaign-btn magnetic">
+            Donate Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section class="about-section" id="about">
+
+  <div class="container about-container">
+
+    <!-- LEFT IMAGES -->
+
+    <div class="about-images" data-aos="fade-right">
+
+      <div class="about-main-image">
+
+        <img src="assests/images/5+years.jpg" alt="">
+
+      </div>
+
+      <div class="about-small-image image-one">
+
+        <img src="assests/images/mmnt2.jpg" alt="">
+
+      </div>
+
+      <div class="about-small-image image-two">
+
+        <img src="assests/images/edctn3.jpg" alt="">
+
+      </div>
+
+      <!-- EXPERIENCE CARD -->
+
+      <div class="experience-card">
+
+        <h3>5+</h3>
+
+        <span>Years Of Social Impact</span>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT CONTENT -->
+
+    <div class="about-content" data-aos="fade-left">
+
+      <span class="about-tag">
+        ABOUT US
+      </span>
+
+      <h2>
+        Empowering Communities <br>
+        Through Compassion & Action
+      </h2>
+
+      <p>
+        Jeevtasha Foundation is committed to creating positive social change through education support, food donation drives, environmental initiatives, healthcare awareness, and volunteer engagement across India.
+      </p>
+
+      <p>
+        Our mission is to uplift underprivileged communities while building a future driven by empathy, sustainability, and equal opportunity for everyone.
+      </p>
+
+      <!-- MISSION VISION -->
+
+      <div class="mission-grid">
+
+        <div class="mission-card">
+
+          <div class="mission-icon">
+            🌍
+          </div>
+
+          <div>
+
+            <h4>Our Mission</h4>
+
+            <p>
+              To serve humanity with dignity, compassion, and sustainable impact.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="mission-card">
+
+          <div class="mission-icon">
+            🚀
+          </div>
+
+          <div>
+
+            <h4>Our Vision</h4>
+
+            <p>
+              Building a future where every individual has access to opportunity and support.
+            </p>
+
+          </div>
+
+        </div>
+
+       
 
 
 
+      </div>
 
-  <!-- Volunteer Section -->
-<section class="section" id="volunteer">
-    <img src="img 9.jpeg" alt="" srcset="" width="500px">
-  <h2>Be Our Volunteer</h2>
-  <p>Volunteers are the backbone of Jeevtasha Foundation. If you wish to join us in our mission of service, 
-     fill out the form below and become a part of our family.</p>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe24gA--PMhATjbY0j-sg32M141fybctpEBiQcyKbcIJeIfbA/viewform" target="_blank" 
-     style="display:inline-block;background:#e63946;color:#fff;padding:12px 25px;
-            border-radius:8px;text-decoration:none;font-weight:600;">
-    Apply Now
-  </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     TESTIMONIAL SECTION
+========================= -->
+
+<section class="testimonial-section">
+
+  <div class="container">
+
+    <!-- TITLE -->
+
+    <div class="section-title" data-aos="fade-up">
+
+      <span>
+        TESTIMONIALS
+      </span>
+
+      <h2>
+        Voices Of Support <br>
+        & Community Impact
+      </h2>
+
+    </div>
+
+    <!-- SWIPER -->
+
+    <div class="swiper testimonialSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- SLIDE 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="quote-icon">        ❝
+            </div>
+
+            <p>
+              Jeevtasha Foundation is genuinely making a difference. Their education and food donation initiatives have impacted many families positively.
+            </p>
+
+            <div class="testimonial-user">
+
+              <img src="assests/images/shriram2.JPG" alt="">
+
+              <div>
+
+                <h4>Shri Ram Tiwari</h4>
+
+                <span>Volunteer</span>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- SLIDE 2 -->
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="quote-icon">
+              ❝
+            </div>
+
+            <p>
+              I admire the transparency and dedication shown by the team. Their plantation drives and humanitarian work are truly inspiring.
+            </p>
+
+            <div class="testimonial-user">
+
+              <img src="assests/images/vivek.jpg" alt="">
+
+              <div>
+
+                <h4>Vivek Tiwari</h4>
+
+                <span>Donor</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+
+        <div class="swiper-slide">
+
+          <div class="testimonial-card">
+
+            <div class="quote-icon">
+              ❝
+            </div>
+
+            <p>
+              Being part of Jeevtasha Foundation has been an incredible journey. The missions are driven by compassion and real impact.
+            </p>
+
+            <div class="testimonial-user">
+
+              <img src="assests/images/kartik.jpeg" alt="">
+
+              <div>
+
+                <h4>kartik jain</h4>
+
+                <span>Secretory </span>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TRUST BOXES -->
+
+    <div class="trust-grid">
+
+      <div class="trust-card" data-aos="fade-up">
+
+        <h3>100%</h3>
+
+        <p>Donation Transparency</p>
+
+      </div>
+
+      <div class="trust-card" data-aos="fade-up" data-aos-delay="100">
+
+        <h3>Verified</h3>
+
+        <p>Community Driven Initiatives</p>
+
+      </div>
+
+      <div class="trust-card" data-aos="fade-up" data-aos-delay="200">
+
+        <h3>Active</h3>
+
+        <p>Volunteer Participation</p>
+
+      </div>
+
+      <div class="trust-card" data-aos="fade-up" data-aos-delay="300">
+
+        <h3>Trusted</h3>
+
+        <p>Social Impact Organization</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     GALLERY SECTION
+========================= -->
+
+<section class="gallery-section" id="gallery">
+
+  <div class="container">
+
+    <!-- TITLE -->
+
+    <div class="section-title" data-aos="fade-up">
+
+      <span>
+        OUR GALLERY
+      </span>
+
+      <h2>
+        Moments Of Humanity, <br>
+        Compassion & Impact
+      </h2>
+
+    </div>
+
+    <!-- GALLERY GRID -->
+
+    <div class="gallery-grid">
+
+      <!-- ITEM -->
+
+      <div class="gallery-item large" data-aos="zoom-in">
+
+        <img src="assests/images/clothdonatoinme.jpg" alt="">
+
+        <div class="gallery-overlay">
+
+          <h3>Cloth Donation Drive</h3>
+
+        </div>
+
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+
+        <img src="assests/images/ganeshmitti.jpeg" alt="">
+
+        <div class="gallery-overlay">
+
+          <h3>Volunteer Activities</h3>
+
+        </div>
+
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+
+        <img src="assests/images/plantation.jpg" alt="">
+
+        <div class="gallery-overlay">
+
+          <h3>Plantation Campaign</h3>
+
+        </div>
+
+      </div>
+
+      <div class="gallery-item tall" data-aos="zoom-in">
+
+        <img src="assests/images/cowprotest.jpg" alt="">
+
+        <div class="gallery-overlay">
+
+          <h3>Social Impact Initiativest</h3>
+
+        </div>
+
+      </div>
+
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+
+        <img src="assests/images/helping.jpg" alt="">
+
+        <div class="gallery-overlay">
+
+          <h3>Helping Children</h3>
+
+        </div>
+
+      </div>
+
+      <div class="gallery-item wide" data-aos="zoom-in" data-aos-delay="200">
+
+        <img src="assests/images/education.jpg" alt="">
+
+        <div class="gallery-overlay">
+
+          <h3>Education Drive</h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: jeevtashafoundation@gmail.com | Phone: +91-9772419404</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+<!-- =========================
+     VOLUNTEER SECTION
+========================= -->
 
+<section class="volunteer-section" id="volunteer">
 
-  <footer id="social">
-  <p>© 2025 Jeevtasha Foundation | Designed with ❤️</p>
-<div class="social-icons">
-      <a href="https://www.instagram.com/jeev_t_foundation/" target="_blank" aria-label="Instagram">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" /
-        width="10px">
-      </a>
-      <a href="https://www.linkedin.com/in/jeevtasha-foundation-9a9a31330/" target="_blank" aria-label="LinkedIn">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /
-        width="10px">
-      </a>
-      <a href="https://www.youtube.com/@JEEVTASHAFOUNDATION" target="_blank" aria-label="YouTube">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube" /
-        width="10px">
-      </a>
-      <a href="https://twitter.com/jeevtasha" target="_blank" aria-label="Twitter">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174876.png" alt="Twitter" /
-        width="10px">
-      </a>
+  <!-- BACKGROUND BLOBS -->
+
+  <div class="volunteer-blob blob-a"></div>
+  <div class="volunteer-blob blob-b"></div>
+
+  <div class="container volunteer-container">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="volunteer-content" data-aos="fade-right">
+
+      <span class="volunteer-tag">
+        JOIN OUR MISSION
+      </span>
+
+      <h2>
+        Become A Volunteer <br>
+        & Help Change Lives
+      </h2>
+
+      <p>
+        Join Jeevtasha Foundation and contribute your time, skills, and compassion toward meaningful social impact initiatives across communities.
+      </p>
+
+      <!-- FEATURES -->
+
+      <div class="volunteer-features">
+
+        <div class="feature-item">
+
+          <div class="feature-icon">
+            🌍
+          </div>
+
+          <span>
+            Community Development
+          </span>
+
+        </div>
+
+        <div class="feature-item">
+
+          <div class="feature-icon">
+            ❤️
+          </div>
+
+          <span>
+            Humanitarian Support
+          </span>
+
+        </div>
+
+        <div class="feature-item">
+
+          <div class="feature-icon">
+            🌱
+          </div>
+
+          <span>
+            Environmental Campaigns
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- DONATION BOX -->
+
+      <div class="donation-cta">
+
+        <h3>
+          Support Our Cause
+        </h3>
+
+        <p>
+          Every contribution helps us provide education, food, healthcare, and sustainable initiatives.
+        </p>
+
+        <a href="javascript:void(0)" class="donation-btn magnetic" onclick="openQR()">
+    Donate Securely
+</a>
+
+      </div>
+
     </div>
+
     
-    
+
+
+    <div class="volunteer-form-wrapper" data-aos="fade-left">
+
+    <div class="volunteer-form">
+
+        <h3>Join Jeevtasha Foundation</h3>
+
+        <p style="text-align:center;line-height:1.8;color:#64748b;margin:30px 0;">
+            Every volunteer has the power to change lives. Register through our official Google Form and become a part of our mission.
+        </p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe24gA--PMhATjbY0j-sg32M141fybctpEBiQcyKbcIJeIfbA/viewform"
+           target="_blank"
+           class="form-btn magnetic"
+           style="display:block;text-align:center;text-decoration:none;">
+
+            🚀 Register as Volunteer
+
+        </a>
+
+    </div>
+
+</div>
+
+</form>
+
+    </div>
 
   </div>
+
+</section>
+
+
+
+
+
+
+<!-- =========================
+     TECH TEAM SECTION
+========================= -->
+
+<section class="tech-team-section" id="tech-team">
+
+  <div class="container">
+
+    <!-- SECTION TITLE -->
+
+    <div class="section-title tech-team-title" data-aos="fade-up">
+
+      <span>OUR TECH TEAM</span>
+
+      <h2>
+        The Minds Behind <br>
+        Our Digital Presence
+      </h2>
+
+      <p>
+        Meet the dedicated people working behind the scenes to build,
+        manage, and improve the digital presence of Jeevtasha Foundation.
+      </p>
+
+    </div>
+
+
+    <!-- TECH TEAM MEMBERS -->
+
+    <div class="tech-team-grid">
+
+      <!-- MEMBER 1 -->
+
+      <div class="tech-member-card" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="tech-member-image">
+
+          <img src="assests/images/shriram-tech2.jpg"
+               alt="Tech Team Member">
+
+          <div class="tech-member-overlay">
+
+            <a href="https://www.linkedin.com/in/shri-ram-tiwari-b21280339?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/shriram__0901?utm_source=qr&igsi=MWJ6aGptMHI1eGhk" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="tech-member-content">
+
+          <span class="tech-role">
+            Web Developer
+          </span>
+
+          <h3>
+           Shriram Tiwari
+          </h3>
+
+          <p>
+            Responsible for website development, design,
+            maintenance, and technical improvements.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- MEMBER 2 -->
+
+      <div class="tech-member-card" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="tech-member-image">
+
+          <img src="assests/images/vivek-tech.jpg"
+               alt="Tech Team Member">
+
+          <div class="tech-member-overlay">
+
+            <a href="https://www.linkedin.com/in/vivek-tiwari-557ba6276?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/vivektiwari3908/" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="tech-member-content">
+
+          <span class="tech-role">
+            Technical Coordinator
+          </span>
+
+          <h3>
+           Vivek Tiwari
+          </h3>
+
+          <p>
+            Supporting technology operations, digital systems,
+            and the continuous growth of our online presence.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- COLUMN 1 -->
+
+      <div class="footer-col">
+
+        <div class="footer-logo">
+
+          Jeevtasha Foundation
+
+        </div>
+
+        <p>
+          Dedicated to uplifting communities through education, healthcare, food donation, environmental initiatives, and humanitarian support.
+        </p>
+
+        <!-- SOCIALS -->
+
+        <div class="social-links">
+
+          <a href="https://www.facebook.com/share/18XwyiJRoc/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="https://www.instagram.com/jeev_t_foundation/">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jeevtasha-foundation-9a9a31330/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@JEEVTASHAFOUNDATION">
+            <i class="fab fa-youtube"></i>
+          </a>
+
+          <a href="https://x.com/jeevtasha62897/">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- COLUMN 2 -->
+
+      <div class="footer-col">
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#campaigns">Campaigns</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- COLUMN 3 -->
+
+      <div class="footer-col">
+
+        <h3>
+          Contact Info
+        </h3>
+
+        <ul>
+
+          <li>
+            📍 Bhopal, Madhya Pradesh, India
+          </li>
+
+          <li>
+            📞 +91 9772419404
+          </li>
+
+          <li>
+            ✉️ jeevtashafoundation@gmail.com
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- COLUMN 4 -->
+
+      <div class="footer-col">
+
+        <h3>
+          Newsletter
+        </h3>
+
+        <p>
+          Subscribe for updates about our campaigns, events, and community initiatives.
+        </p>
+
+        <form class="newsletter-form">
+
+          <input type="email" placeholder="Enter your email">
+
+          <button type="submit">
+            Subscribe
+          </button>
+
+        </form>
+
+      </div>
+
+      <div class="footer-col">
+   
+       <h4>For any query regarding website contact-</h4> <br>
+        
+        <ul>
+
+          <li><a href="#">Linkdin-
+            <i class="fab fa-linkedin-in"></i>
+          </a></li>
+          <li><a href="#">Instagram -
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!-- INSTAGRAM STRIP -->
+
+    <div class="footer-gallery">
+
+      <img src="assests/images/footer1.jpg" alt="">
+      <img src="assests/images/jeev5year.jpg" alt="">
+      <img src="assests/images/footer3.jpg" alt="">
+      <img src="assests/images/footer4.jpg" alt="">
+      <img src="assests/images/vaishali.jpg" alt="">
+      <img src="assests/images/prabhash.jpg" alt="">
+
+    </div>
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Jeevtasha Foundation. All Rights Reserved. 
+      </p>
+
+    </div>
+
+  </div>
+
 </footer>
 
+<!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div class="lightbox">
+
+  <span class="close-lightbox">
+    ×
+  </span>
+
+  <img class="lightbox-image" src="" alt="">
+
+</div>
+
+
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- GSAP -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<!-- SWIPER -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- JS -->
+
+<script src="script.js"></script>
+
+<!-- =========================
+     CUSTOM CURSOR
+========================= -->
+
+<div class="custom-cursor"></div>
+<div class="cursor-dot"></div>
+
+
+
+<div id="qrModal" class="qr-modal">
+
+    <div class="qr-content">
+
+        <span class="close-qr" onclick="closeQR()">&times;</span>
+
+        <h2>Support Jeevtasha</h2>
+
+        <p>Scan the QR code using PhonePe, GPay, Paytm, or any UPI app.</p>
+
+        <img src="assests/images/qrcode.png.jpeg" alt="paytm QR Code">
+
+        <h4>UPI ID: shriram@ybl</h4>
+
+        <p>Thank you for your contribution ❤️</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<script>
+
+function openQR() {
+
+    document.getElementById("qrModal").style.display = "flex";
+
+}
+
+function closeQR() {
+
+    document.getElementById("qrModal").style.display = "none";
+
+}
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("qrModal");
+
+    if(event.target === modal){
+
+        modal.style.display = "none";
+
+    }
+
+}
+
+</script>
 </body>
+
+
 </html>
-
-
